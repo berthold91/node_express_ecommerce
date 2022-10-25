@@ -10771,6 +10771,40 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+footer h2, footer .h2 {
+  width: 100%;
+  background-color: rgb(54, 49, 49);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 1.5rem 0 1rem 0;
+}
+
+.footer__links {
+  width: 100%;
+  height: auto;
+  background-color: rgb(54, 49, 49);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0 1rem 0;
+}
+.footer__links ul {
+  list-style-type: none;
+}
+.footer__links ul li {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0 0.3rem 0;
+}
+.footer__links ul li a {
+  list-style-type: none;
+  color: white;
+  font-size: 1.1rem;
+  font-family: arial;
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10826,38 +10860,53 @@ textarea.form-control-lg {
   color: black;
 }
 
-footer h2, footer .h2 {
+/*
+* Styling of the main content
+*/
+main > h2, main > .h2 {
   width: 100%;
-  background-color: rgb(54, 49, 49);
-  color: white;
   text-align: center;
-  margin: 0;
-  padding: 1.5rem 0 1rem 0;
+  padding: 1rem 0 0 0;
 }
 
-.footer__links {
+.products__container {
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: space-around;
+  /*
+  * Styling of static product
+  */
+}
+.products__container > a {
+  text-decoration: none;
+}
+.products__container .product {
   width: 100%;
   height: auto;
-  background-color: rgb(54, 49, 49);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 0 1rem 0;
+  overflow: hidden;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
-.footer__links ul {
-  list-style-type: none;
+.products__container .product > img {
+  min-width: 250px;
+  max-height: 200px;
 }
-.footer__links ul li {
-  display: flex;
-  align-items: center;
-  padding: 0.3rem 0 0.3rem 0;
-}
-.footer__links ul li a {
-  list-style-type: none;
-  color: white;
+.products__container .product p {
+  margin: 0 0 0 0.5rem;
+  padding: 0, 2rem;
+  color: black;
+  font-weight: 600;
   font-size: 1.1rem;
-  font-family: arial;
-  text-decoration: none;
+  opacity: 0.7;
+}
+.products__container .product .product__brand, .products__container .product .color__count {
+  opacity: 0.5;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,8 @@
 // Import all of Bootstrap's CSS
 //@import "~bootstrap/scss/bootstrap";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import './footer.scss';
+
 $color-primary: White;
 $color-secondary: black;
 $color-accent: lightblue;
@@ -65,6 +67,59 @@ $navlinks-ft-size: 1.1rem;
         }
     }
 }
-@import './footer.scss'
+
+/*
+* Styling of the main content
+*/
+main{
+    >h2{
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0 0 0;
+    }
+}
+.products__container{
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+    >a{
+        text-decoration: none;
+    }
+/*
+* Styling of static product
+*/
+.product{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    >img{
+        min-width: 250px;
+        max-height: 200px;
+    }
+
+    p{
+        margin: 0 0 0 0.5rem ;
+        padding: 0,2rem;
+        color: $color-secondary;
+        font-weight: 600;
+        font-size: $navlinks-ft-size;
+        opacity: 0.7;
+    }
+
+    .product__brand, .color__count{
+        opacity: 0.5;
+        font-weight: 400;
+    }
+}
+}
+
 
     
