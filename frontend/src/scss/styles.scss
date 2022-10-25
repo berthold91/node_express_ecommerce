@@ -1,2 +1,70 @@
 // Import all of Bootstrap's CSS
-@import "~bootstrap/scss/bootstrap";
+//@import "~bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+$color-primary: White;
+$color-secondary: black;
+$color-accent: lightblue;
+$brand-ft-family: Helvetica;
+$links-ft-family: arial;
+$navlinks-ft-size: 1.1rem;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.topbar{
+    width: 100%;
+    height: 2rem;
+    background-color: $color-accent;
+}
+.navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+
+    .navbar__brand{
+        margin-left: 5%;
+        font: {
+            size: 2rem;
+            weight:bold;
+        }
+        text-decoration: none;
+        color: $color-secondary;
+        >span{
+            color: $color-accent;
+        }
+    }
+
+    .navbar__Navs{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 5%;
+
+        .topNav, .mainNav{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .topNav__item, .mainNav__item{
+            width: auto;
+            height: auto;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 0.5rem 0rem 0.5rem;
+        }
+        .topNav__link, .mainNav__link{
+            text-decoration: none;
+            font-size: $navlinks-ft-size;
+            color: $color-secondary;
+        }
+    }
+}
+@import './footer.scss'
+
+    

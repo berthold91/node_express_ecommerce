@@ -1,0 +1,35 @@
+footer h2 {
+  width: 100%;
+  background-color: rgb(54, 49, 49);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 1.5rem 0 1rem 0;
+}
+
+.footer__links {
+  width: 100%;
+  height: auto;
+  background-color: rgb(54, 49, 49);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0 1rem 0;
+}
+.footer__links ul {
+  list-style-type: none;
+}
+.footer__links ul li {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0 0.3rem 0;
+}
+.footer__links ul li a {
+  list-style-type: none;
+  color: white;
+  font-size: 1.1rem;
+  font-family: arial;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=footer.css.map */
